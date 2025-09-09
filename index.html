@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Wel Art | Custom Graffiti Hats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-marker {
+            font-family: 'Permanent Marker', cursive;
+        }
+        /* Custom Green Colors */
+        .bg-brand-green { background-color: #4CAF50; }
+        .hover\:bg-brand-green-dark:hover { background-color: #45a049; }
+        .text-brand-green { color: #4CAF50; }
+        .border-brand-green { border-color: #4CAF50; }
+
+        @keyframes kenburns-effect {
+            0% {
+                transform: scale(1) translate(0, 0);
+            }
+            100% {
+                transform: scale(1.1) translate(-2%, 2%);
+            }
+        }
+
+        .hero-bg-animation {
+            animation: kenburns-effect 20s ease-out infinite alternate;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-marker text-white">Be Wel Art</h1>
+            <a href="#order" class="bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300">Order Now</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative text-white overflow-hidden">
+            <!-- Background Image with Animation -->
+            <div class="absolute inset-0 w-full h-full bg-cover bg-center hero-bg-animation" style="background-image: url('https://i.postimg.cc/cCG4pg9C/IMG-2953.jpg');"></div>
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-br from-black via-black/70 to-green-900/80"></div>
+            
+            <div class="container mx-auto px-6 py-32 text-center relative z-10">
+                <h2 class="text-5xl font-marker mb-4 drop-shadow-lg">Your Style, Sprayed On.</h2>
+                <p class="text-xl max-w-2xl mx-auto mb-8 drop-shadow-md">Unique, one-of-a-kind hats with custom graffiti art, made for you. Turn a simple cap into wearable street art.</p>
+                <a href="#gallery" class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full shadow-xl hover:bg-gray-300 transition duration-300">Choose Your Canvas</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-3xl font-marker mb-4 text-white">From the Wall to Your Wardrobe.</h3>
+                <p class="max-w-3xl mx-auto text-gray-400">
+                    Welcome! I specialize in creating custom hats that bring the energy of street art to your style. Each design is an original piece, ensuring your hat is truly one-of-a-kind.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Designs Gallery -->
+        <section id="featured-designs" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h3 class="text-3xl font-marker text-center mb-12 text-white">Featured Designs</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://i.postimg.cc/cCG4pg9C/IMG-2953.jpg" alt="Finished custom hat design 1" class="gallery-image cursor-pointer w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://i.postimg.cc/9XyfGb07/IMG-2956.jpg" alt="Finished custom hat design 2" class="gallery-image cursor-pointer w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://i.postimg.cc/hv8PcD6r/IMG-2959.jpg" alt="Finished custom hat design 3" class="gallery-image cursor-pointer w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg shadow-xl">
+                        <img src="https://i.postimg.cc/YqkC8FLy/IMG-2962.jpg" alt="Finished custom hat design 4" class="gallery-image cursor-pointer w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hat Styles Gallery -->
+        <section id="gallery" class="py-20 bg-gray-800 relative overflow-hidden">
+             <div aria-hidden="true" class="absolute inset-0 -z-0">
+                <svg class="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4" width="800" height="800" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".1" fill="#4CAF50"><path d="M132.332 235.945c11.031-6.23 23.012-10.43 35.342-12.335 12.33-1.906 24.84-1.45 37.001 1.34 12.16 2.79 23.766 7.89 34.367 14.945 10.602 7.054 20.016 15.93 27.758 26.226 7.742 10.297 13.672 21.84 17.516 34.223 3.843 12.383 5.531 25.437 4.968 38.336-0.563 12.898-3.47 25.5-8.594 37.25-5.125 11.75-12.39 22.5-21.515 31.812-9.126 9.313-19.969 17.063-32.133 22.875-12.164 5.813 25.476 9.586 39.46 11.086-13.984 1.5-28.445.695-42.062-2.453-13.618-3.149-26.235-8.594-37.313-16.039-11.078-7.446-20.484-16.758-27.758-27.524-7.273-10.765-12.281-22.82-14.75-35.617-2.468-12.796-2.343-26.156 0.375-39.093 2.719-12.938 8.016-25.266 15.563-36.438 7.546-11.172 17.218-20.945 28.5-28.843 11.28-7.899-24.015-13.829-37.5-17.438 13.484-3.61 27.562-4.812 41.343-3.485Z"/><path d="M503.541 627.188c1.782-13.25 0.313-26.657-4.125-39.39-4.438-12.735-11.72-24.5-21.516-34.688-9.797-10.187-21.945-18.601-35.851-24.757-13.907-6.157-29.32-9.922-45.29-11.086-15.968-1.165-32.312-.727-48.046 2.062-15.735 2.79-30.68 7.945-44.29 15.157-13.61 7.21-25.68 16.32-35.71 26.906-10.032 10.586-17.883 22.5-23.25 35.25-5.367 12.75-8.156 26.156-8.219 39.75-0.062 13.593 2.563 27.218 7.688 39.937 5.125 12.72 12.625 24.375 22.125 34.313 9.5 9.937 20.875 18.015 33.625 23.812 12.75 5.797 26.664 9.18 41.133 9.938 14.468 0.758 29.218-1.164 43.437-5.563 14.22-4.398 27.75-11.25 39.813-20.187 12.062-8.938 22.48-19.75 30.75-31.937 8.27-12.188 14.2-25.5 17.44-39.563 3.23-14.062 3.73-28.687 1.37-42.875Z"/></g></svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h3 class="text-3xl font-marker text-center mb-12 text-white">Choose Your Canvas</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/jWfGXV8M/black.webp" alt="Classic Black Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Classic Black</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/jWfGXV8M/black.webp">Paint Me</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/1fY21R2W/teal.png" alt="Cool Teal Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Cool Teal</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/1fY21R2W/teal.png">Paint Me</button>
+                        </div>
+                    </div>
+                     <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/bdpKQB1R/camo1.png" alt="Digital Camo Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Digital Camo</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/bdpKQB1R/camo1.png">Paint Me</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/grs14HDb/camo2.webp" alt="Midnight Camo Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Midnight Camo</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/grs14HDb/camo2.webp">Paint Me</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/9RjsgxKC/camo3.webp" alt="Earth Camo Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Earth Camo</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/9RjsgxKC/camo3.webp">Paint Me</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/9wmKCDck/camo4.webp" alt="Woodland Camo Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Woodland Camo</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/9wmKCDck/camo4.webp">Paint Me</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/kB5zHR16/camo5.jpg" alt="Striped Camo Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Striped Camo</h4>
+                             <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/kB5zHR16/camo5.jpg">Paint Me</button>
+                        </div>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://i.postimg.cc/bZDMycjq/camo6.webp" alt="Vintage Camo Trucker Hat" class="w-full h-48 object-cover group-hover:opacity-90 transition-opacity">
+                        <div class="p-4">
+                            <h4 class="font-semibold text-lg text-white">Vintage Camo</h4>
+                            <button class="paint-button mt-2 w-full bg-brand-green text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300" data-img-src="https://i.postimg.cc/bZDMycjq/camo6.webp">Paint Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order & Payment Section -->
+        <section id="order" class="py-20 bg-gray-800 relative overflow-hidden">
+             <div aria-hidden="true" class="absolute inset-0 -z-0">
+                <svg class="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4" width="800" height="800" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".1" fill="#4CAF50"><path d="M687.668 535.945c-11.031-6.23-23.012-10.43-35.342-12.335-12.33-1.906-24.84-1.45-37.001 1.34-12.16 2.79-23.766 7.89-34.367 14.945-10.602 7.054-20.016 15.93-27.758 26.226-7.742 10.297-13.672 21.84-17.516 34.223-3.843 12.383-5.531 25.437-4.968 38.336.563 12.898 3.47 25.5 8.594 37.25 5.125 11.75 12.39 22.5 21.515 31.812 9.126 9.313 19.969 17.063 32.133 22.875 12.164 5.813 25.476 9.586 39.46 11.086 13.984 1.5 28.445.695 42.062-2.453 13.618-3.149 26.235-8.594 37.313-16.039 11.078-7.446 20.484-16.758 27.758-27.524 7.273-10.765 12.281-22.82 14.75-35.617 2.468-12.796 2.343-26.156-0.375-39.093-2.719-12.938-8.016-25.266-15.563-36.438-7.546-11.172-17.218-20.945-28.5-28.843-11.28-7.899-24.015-13.829-37.5-17.438-13.484-3.61-27.562-4.812-41.343-3.485Z"/></g></svg>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h3 class="text-3xl font-marker text-center mb-12 text-white">Order Your Custom Hat</h3>
+                <div class="max-w-4xl mx-auto bg-gray-900 p-8 rounded-2xl shadow-inner">
+                    <div class="text-center mb-8">
+                        <p class="text-4xl font-bold text-brand-green">$75.00</p>
+                        <p class="text-gray-400">Includes hat and custom artwork</p>
+                    </div>
+
+                    <h4 class="text-xl font-semibold text-center mb-6 text-white">How to Order:</h4>
+                    <ol class="list-decimal list-inside space-y-4 max-w-md mx-auto text-gray-300">
+                        <li><strong>Choose your hat style</strong> from the gallery above.</li>
+                        <li><strong>Complete payment</strong> using one of the options below.</li>
+                        <li><strong>Email me</strong> at <a href="mailto:your-email@example.com" class="text-brand-green font-semibold">your-email@example.com</a> with:
+                            <ul class="list-disc list-inside ml-6 mt-2 text-sm">
+                                <li>Your chosen hat style.</li>
+                                <li>A description of your desired design.</li>
+                                <li>A screenshot of your payment confirmation.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <div class="mt-12">
+                        <h4 class="text-xl font-semibold text-center mb-6 text-white">Payment</h4>
+                        <div class="flex justify-center text-center text-white">
+                            <!-- Venmo -->
+                            <div class="flex flex-col items-center">
+                                <i class="fa-solid fa-v text-5xl mb-3"></i>
+                                <h5 class="font-bold text-lg">Venmo</h5>
+                                <p class="text-sm text-gray-500 mb-3">@Dragon-Tree</p>
+                                <img src="https://i.postimg.cc/Hn3KmFYK/Screenshot-2025-09-09-at-12-45-22.png" alt="Venmo QR Code for bewelart" class="rounded-lg shadow-xl w-48 h-48 object-cover border-2 border-white/20">
+                                <a href="https://venmo.com/u/Dragon-Tree" target="_blank" rel="noopener noreferrer" class="mt-4 bg-brand-green text-white font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-brand-green-dark transition duration-300">
+                                    Pay with Venmo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Be Wel Art. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="https://www.instagram.com/bewelart/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white mx-3"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white mx-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white mx-3"><i class="fab fa-tiktok fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Image Lightbox Modal -->
+    <div id="galleryModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[60] hidden cursor-pointer p-4">
+        <button id="closeGalleryModal" class="absolute top-4 right-6 text-white text-5xl font-light z-[61]">&times;</button>
+        <img id="galleryModalImage" src="" alt="Expanded hat design" class="rounded-lg max-h-[90vh] max-w-[90vw] object-contain">
+    </div>
+
+    <!-- Image Generation Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-2xl max-w-lg w-full text-center relative border border-gray-700">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">&times;</button>
+            <h3 class="text-2xl font-marker text-white mb-4">Your Custom Hat</h3>
+            <div id="loadingSpinner" class="my-8">
+                <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-brand-green mx-auto"></div>
+                <p class="mt-4 text-gray-400">Spraying on the art...</p>
+            </div>
+            <img id="generatedImage" src="" alt="Generated custom hat" class="w-full h-auto rounded-lg hidden">
+        </div>
+    </div>
+
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        const closeModal = document.getElementById('closeModal');
+        const paintButtons = document.querySelectorAll('.paint-button');
+        const generatedImage = document.getElementById('generatedImage');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+
+        // Function to convert image URL to base64 and get its mime type
+        async function imageToMimeAndBase64(url) {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Failed to fetch image from ${url}: ${response.statusText}`);
+            }
+            const blob = await response.blob();
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve({
+                    base64: reader.result.split(',')[1],
+                    mimeType: blob.type
+                });
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        async function generateImage(baseImageUrl) {
+            const apiKey = ""; // Keep this empty
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=${apiKey}`;
+
+            const artImageUrl = 'https://i.postimg.cc/N06mnCXX/IMG-2948.jpg';
+            
+            try {
+                const artImage = await imageToMimeAndBase64(artImageUrl);
+                const hatImage = await imageToMimeAndBase64(baseImageUrl);
+
+                const payload = {
+                    contents: [{
+                        parts: [
+                            { text: "You are a master product photographer and mockup artist. Your primary goal is to make the turtle art the hero of the image. Place the turtle graphic from the first image onto the blank hat in the second image as a premium, vibrant, and photorealistic screenprinted transfer. The artwork should be the undeniable star of the final product shot. Position the design with precision in the absolute lower right corner of the hat's front panel, right where the panel meets the bill. The lighting must be flawless, making the art pop while casting realistic, subtle shadows on the hat's texture. The final image must be a high-end, commercial-quality product photo that showcases the stunning detail of the art on the hat." },
+                            { inlineData: { mimeType: artImage.mimeType, data: artImage.base64 } },
+                            { inlineData: { mimeType: hatImage.mimeType, data: hatImage.base64 } }
+                        ]
+                    }],
+                    generationConfig: {
+                        responseModalities: ['IMAGE']
+                    },
+                };
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorBody = await response.text();
+                    throw new Error(`API request failed with status ${response.status}: ${errorBody}`);
+                }
+
+                const result = await response.json();
+                const base64Data = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData)?.inlineData?.data;
+
+                if (base64Data) {
+                    generatedImage.src = `data:image/png;base64,${base64Data}`;
+                    loadingSpinner.classList.add('hidden');
+                    generatedImage.classList.remove('hidden');
+                } else {
+                     const blockReason = result?.candidates?.[0]?.finishReason;
+                     if (blockReason === 'SAFETY') {
+                        throw new Error("Image generation was blocked for safety reasons.");
+                     }
+                     throw new Error("No image data found in API response.");
+                }
+
+            } catch (error) {
+                console.error("Error generating image:", error);
+                loadingSpinner.innerHTML = `<p class="text-red-500">Sorry, something went wrong. ${error.message}</p>`;
+            }
+        }
+
+
+        paintButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imgSrc = button.dataset.imgSrc;
+                
+                // Show modal and reset state
+                imageModal.classList.remove('hidden');
+                loadingSpinner.classList.remove('hidden');
+                generatedImage.classList.add('hidden');
+                generatedImage.src = "";
+                loadingSpinner.innerHTML = '<div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-brand-green mx-auto"></div><p class="mt-4 text-gray-400">Spraying on the art...</p>';
+
+
+                generateImage(imgSrc);
+            });
+        });
+
+        const closeTheModal = () => {
+            imageModal.classList.add('hidden');
+        };
+
+        closeModal.addEventListener('click', closeTheModal);
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                closeTheModal();
+            }
+        });
+
+        // --- Gallery Lightbox Logic ---
+        const galleryModal = document.getElementById('galleryModal');
+        const galleryModalImage = document.getElementById('galleryModalImage');
+        const galleryImages = document.querySelectorAll('.gallery-image');
+
+        galleryImages.forEach(image => {
+            image.addEventListener('click', () => {
+                const imgSrc = image.getAttribute('src');
+                galleryModalImage.setAttribute('src', imgSrc);
+                galleryModal.classList.remove('hidden');
+            });
+        });
+
+        const closeGalleryTheModal = () => {
+            galleryModal.classList.add('hidden');
+        };
+        
+        // Close modal by clicking anywhere on it (background, image, or X button)
+        galleryModal.addEventListener('click', closeGalleryTheModal);
+    </script>
+
+</body>
+</html>
+
